@@ -1,86 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="robots" content="noindex, nofollow" />
-  <title>Local Myths Weekly — Ongoing Alert</title>
-  <style>
-    body { margin:0; font-family: Georgia, 'Times New Roman', serif; background:#0f0f12; color:#eaeaf0; }
-    .nav { position:sticky; top:0; z-index:5; background:#0b0b10; border-bottom:1px solid #262635; }
-    .nav .wrap { max-width:1100px; margin:0 auto; padding:14px 20px; display:flex; gap:18px; align-items:center; }
-    .brand { font-weight:bold; letter-spacing:.4px; }
-    .nav a { color:#cfd0ff; text-decoration:none; font-size:14px; }
-    .nav a:hover { text-decoration:underline; }
-    header { padding:36px 20px; background:linear-gradient(180deg,#1b1b22,#0f0f12); border-bottom:1px solid #2a2a35; }
-    .breaking { background:#9b1c1c; color:#fff; padding:10px 0; overflow:hidden; white-space:nowrap; }
-    .breaking span { display:inline-block; padding-left:100%; animation: ticker 18s linear infinite; font-weight:bold; letter-spacing:.6px; }
-    @keyframes ticker { 0% { transform: translateX(0); } 100% { transform: translateX(-100%); } }
-    .container { max-width:1100px; margin:40px auto; padding:0 20px; }
-    .grid { display:grid; grid-template-columns: 1.2fr 0.8fr; gap:28px; }
-    .card { background:#17171f; border:1px solid #262635; border-radius:14px; padding:24px; box-shadow:0 10px 30px rgba(0,0,0,.35); }
-    .badge { display:inline-block; padding:6px 10px; border-radius:999px; background:#7b1d1d; color:#fff; font-size:12px; letter-spacing:.4px; }
-    h1 { font-size:42px; margin:0 0 8px 0; }
-    h2 { font-size:28px; margin:10px 0; }
-    h3 { margin:0; color:#d7d7ff; }
-    .meta { color:#9aa; font-size:14px; }
-    .headline { font-size:34px; line-height:1.2; }
-    .kicker { text-transform:uppercase; letter-spacing:2px; color:#ff9b9b; font-size:12px; }
-    .btn { background:#2a2a35; color:#fff; border:1px solid #3a3a55; padding:10px 14px; border-radius:10px; cursor:pointer; }
-    .btn:hover { background:#3a3a55; }
-    footer { margin-top:60px; padding:22px; border-top:1px solid #2a2a35; color:#8f90a6; font-size:12px; text-align:center; }
-  </style>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="robots" content="noindex, nofollow" />
+<title>Local Myths Weekly — Ongoing Alert</title>
+<style>
+body { margin:0; font-family: Georgia, 'Times New Roman', serif; background:#0f0f12; color:#eaeaf0; }
+.nav { position:sticky; top:0; z-index:5; background:#0b0b10; border-bottom:1px solid #262635; }
+.nav .wrap { max-width:1100px; margin:0 auto; padding:14px 20px; display:flex; gap:18px; align-items:center; }
+.brand { font-weight:bold; letter-spacing:.4px; }
+.nav a { color:#cfd0ff; text-decoration:none; font-size:14px; }
+.nav a:hover { text-decoration:underline; }
+header { padding:36px 20px; background:linear-gradient(180deg,#1b1b22,#0f0f12); border-bottom:1px solid #2a2a35; }
+.breaking { background:#9b1c1c; color:#fff; padding:10px 0; overflow:hidden; white-space:nowrap; }
+.breaking span { display:inline-block; padding-left:100%; animation: ticker 18s linear infinite; font-weight:bold; letter-spacing:.6px; }
+@keyframes ticker { 0% { transform: translateX(0); } 100% { transform: translateX(-100%); } }
+.container { max-width:1100px; margin:40px auto; padding:0 20px; }
+.grid { display:grid; grid-template-columns: 1fr; gap:28px; }
+.card { background:#17171f; border:1px solid #262635; border-radius:14px; padding:24px; box-shadow:0 10px 30px rgba(0,0,0,.35); }
+.badge { display:inline-block; padding:6px 10px; border-radius:999px; background:#7b1d1d; color:#fff; font-size:12px; letter-spacing:.4px; margin-bottom:12px; }
+h1 { font-size:42px; margin:0 0 8px 0; }
+h2 { font-size:28px; margin:10px 0; }
+h3 { margin:0; color:#d7d7ff; margin-top:16px; }
+.meta { color:#9aa; font-size:14px; margin-bottom:12px; display:block; }
+.headline { font-size:34px; line-height:1.4; }
+.kicker { text-transform:uppercase; letter-spacing:2px; color:#ff9b9b; font-size:12px; }
+.btn { background:#2a2a35; color:#fff; border:1px solid #3a3a55; padding:10px 14px; border-radius:10px; cursor:pointer; text-decoration:none; display:inline-block; }
+.btn:hover { background:#3a3a55; }
+footer { margin-top:60px; padding:22px; border-top:1px solid #2a2a35; color:#8f90a6; font-size:12px; text-align:center; }
+.article-image { width:100%; max-height:400px; object-fit:cover; border-radius:14px; margin-bottom:24px; border:1px solid #262635; }
+</style>
 </head>
 <body>
-  <nav class="nav">
-    <div class="wrap">
-      <div class="brand">Local Myths Weekly</div>
-      <a href="index.html">Home</a>
-      <a href="voices.html">Voices of the Night</a>
-      <a href="statements.html">Official Statements</a>
-      <a href="about.html">About</a>
-    </div>
-  </nav>
+<nav class="nav">
+<div class="wrap">
+<div class="brand">Local Myths Weekly</div>
+<a href="index.html">Home</a>
+<a href="voices.html">Voices of the Night</a>
+<a href="statements.html">Official Statements</a>
+<a href="about.html">About</a>
+</div>
+</nav>
 
-  <div class="breaking"><span>BREAKING • After‑midnight incidents under review • Authorities advise calm vigilance • Public urged not to speculate</span></div>
+<div class="breaking"><span>BREAKING • After‑midnight incidents under review • Authorities advise calm vigilance • Public urged not to speculate</span></div>
 
-  <header>
-    <div class="container">
-      <div class="kicker">Ongoing Alert</div>
-      <h1>The Midnight Cheek Phantom</h1>
-      <p class="meta">Developing story • Updated periodically • Independent monitoring</p>
-    </div>
-  </header>
+<header>
+<div class="container">
+<div class="kicker">Ongoing Alert</div>
+<h1>The Midnight Cheek Phantom</h1>
+<p class="meta">Developing story • Updated periodically • Independent monitoring</p>
+</div>
+</header>
 
-  <!-- HOME PAGE: ONLY THESE SECTIONS ARE VISIBLE -->
-  <main class="container">
-    <section class="grid">
-      <article class="card">
-        <span class="badge">Developing</span>
-        <h2 class="headline">Authorities Monitor Unusual After‑Midnight Encounters</h2>
-        <p>
-          Reports describe brief encounters involving adult men during late‑night hours. Officials
-          emphasize that details remain inconsistent, though patterns are emerging.
-        </p>
-        <p class="meta">Why this matters: Similar descriptions across locations have prompted wider attention.</p>
-        <a class="btn" href="statements.html">Read Official Statements</a>
-      </article>
+<main class="container">
+<img src="image.jpg" alt="Composite image released by police based on victim and eyewitness accounts" class="article-image">
+<p class="meta">Released by police after gathering accounts from victims and eyewitnesses</p>
 
-      <aside class="card">
-        <span class="badge">Second Angle</span>
-        <h3>A Pattern Without a Motive</h3>
-        <p>
-          Analysts note the lack of theft, threats, or demands. The encounters appear intentional yet
-          inexplicable, raising questions about motive rather than danger.
-        </p>
-        <a class="btn" href="voices.html">Voices of the Night</a>
-      </aside>
-    </section>
-  </main>
+<section class="grid">
+<article class="card">
+<span class="badge">Ongoing</span>
+<h2 class="headline">Midnight Cheek Phantom: Eyewitnesses Report a Smile That Arrives Before the Slap</h2>
+<p class="meta">Filed somewhere unnamed • After midnight • By Staff Who Refuse to Sleep</p>
+<p>For weeks now, residents have reported a peculiar figure wandering quiet streets after dark—quietly, confidently, and with the timing of someone who has rehearsed. Descriptions vary wildly, but all accounts agree on three things: an unsettling calm, a sudden appearance, and a disappearance as swift as a bad decision that echoes.</p>
+<p>“I heard footsteps, felt a presence, and then—nothing. Just the echo of confidence.” Authorities (if they exist) have neither confirmed nor denied the legend. Social circles, however, have already agreed on a better name: The Midnight Cheek Phantom.</p>
+<p>What does she want? According to a growing chorus of shaken night owls, the answer is as baffling as it is specific: she targets adult men only, seeking a brief, resonant smack delivered with theatrical precision. Witnesses report no theft, no chase, and no warning—only the sudden realization that the moment was curated, savored, and punctuated by an echo meant to linger far longer than dignity itself.</p>
+<p>The smile is what unnerves people most. Described as delighted rather than deranged, it suggests intention—an enjoyment of the act not as violence, but as performance. “It was over before I could react,” said one witness, “and she looked… pleased. Like she’d hit a perfect note.”</p>
 
-  <footer>
-    © 2025 Local Myths Weekly • Fiction & Parody • <a href="about.html">About</a>
-  </footer>
-  
+<h3>What We Know (Allegedly)</h3>
+<ul>
+<li>Appears only after midnight</li>
+<li>Targets men exclusively, according to all verified accounts</li>
+<li>Leaves witnesses confused and inexplicably butt‑slapped</li>
+<li>Vanishes without a trace—sometimes mid‑sentence</li>
+</ul>
+<p>Experts we may or may not have invented now offer a more layered theory. The phenomenon, they say, sits at the crossroads of urban folklore, collective suggestion, and a population running on too little sleep. Add dim streetlights, half‑remembered headlines, and the human tendency to narrativize embarrassment, and you get a legend that grows louder with every retelling.</p>
+<p>In this reading, The Midnight Cheek Phantom is less a person and more a pressure valve—a story that absorbs awkward encounters and releases them as myth. The city, in other words, may not need answers so much as it needs rest. Failing that, witnesses are advised to stay alert after midnight and mind the echo.</p>
+</article>
+
+<aside class="card">
+<span class="badge">Second Angle</span>
+<h3>Is the Smile the Point? Psychologists Debate the Performance</h3>
+<p class="meta">Opinion • Somewhere unnamed • By Contributors With Concerns</p>
+<p>While the act itself has dominated late‑night conversations, experts now argue the real story may be the smile. Not incidental. Not apologetic. But radiant—suggesting purpose, satisfaction, and a commitment to the craft.</p>
+<p>“When a smile precedes the act, you’re no longer witnessing chaos,” one analyst explains. “You’re attending a show.”</p>
+<p>This reframing casts the Midnight Cheek Phantom less as a menace and more as a misunderstood performance artist working in the city’s least prepared venues. The streets become a stage, the hour a curtain call, and the echo—well—that’s the encore.</p>
+<p>Critics counter that the city did not consent to experimental theater. Supporters reply that art has always arrived unannounced. Either way, the smile remains, reportedly visible even after the sound has faded.</p>
+</aside>
+
+<article class="card">
+<span class="badge">Developing</span>
+<h3>Men Only—for Now: Could the Phantom’s Interests Expand?</h3>
+<p class="meta">Analysis • Somewhere unnamed • By Writers Asking Uncomfortable Questions</p>
+<p>Thus far, every confirmed encounter shares one striking detail: the Midnight Cheek Phantom has targeted men exclusively. No reports from women. No secondhand accounts. No exceptions.</p>
+<p>But some commentators caution against drawing long‑term conclusions. “Patterns,” one analyst notes, “have a way of holding—until they don’t.” Others point out that legends evolve, appetites shift, and curiosity is rarely known for its discipline.</p>
+<p>“Women are, historically speaking, irresistible,” said one observer, speaking broadly and without evidence. “It would be naive to assume immunity forever.” For now, women appear to remain spectators to the phenomenon, watching events unfold with a mix of concern, disbelief, and second‑hand embarrassment. Whether this status holds—or merely represents an early chapter—remains a matter of anxious speculation.</p>
+</article>
+</section>
+</main>
+
+<footer>
+© 2025 Local Myths Weekly • Fiction & Parody • <a href="about.html">About</a>
+</footer>
 </body>
 </html>
